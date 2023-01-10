@@ -1,0 +1,32 @@
+body { 
+    color: #414141; /*Grey..... This is a comment*/
+    background-color: #cfba74; /* Different properties can be added to the CSS block */
+    font-size: 13px;
+}
+/* fonts manipulation: font weights, styles, fonts */
+h1, h2 {
+    font-size: 2em, 1.6em;
+    font-family: 'Comic', monospace;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    text-align: justify;
+}
+
+/* Manipulation of (bullets); OrderedLists and UnorderedLists */
+
+ol {
+    list-style-type: lower-roman;
+    text-align: left;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+}
+/* remove underline in links by referrring to =none */
+a {
+    text-decoration: none;
+}

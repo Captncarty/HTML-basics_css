@@ -1,0 +1,77 @@
+.syn {  /* (.) represents "class" {much dif from type selector}, naming can be anything but identical*/
+    color: lightskyblue;
+    font-style: italic;
+}
+
+.button:link,
+.button:visited {
+    display: block;
+    text-decoration: none;
+
+    color: #FFF;
+    background-color: blue;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 40px auto;
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+.call-to-action:link,
+.call-to-action:visited {
+    font-style: italic;
+    background-color: yellowgreen;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+    background-color: lightyellow;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+    background-color: yellow;
+}
+
+.syn em{
+    font-style: normal; /* To effect change in an element inside an element */
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    text-decoration: dotted;
+}
+
+a:visited {
+    color: purple;
+}
+.button:hover,
+.button:visited:hover {
+    color: orangered; /* Applied to only visited sites-link when hovering */
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: rebeccapurple;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+#button-2 {
+    color: darkgreen;
+}

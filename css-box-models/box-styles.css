@@ -1,0 +1,47 @@
+body {
+    font-size: 15px;
+    text-align: center; /* alligns content inside the box and not bordr-box*/
+}
+
+h1 {
+    background-color: #dde0e3; /*block-level elem*/
+    padding: 50px;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    background-color: #dde0e3;
+    padding: 25px 15px; /*15px 0px 10px 5px; for all four sides*/
+    border-top: 8px solid black;
+    margin-bottom: 50px;
+
+}
+em, strong {
+    background-color: #b2d6ff; /*Inline elements; em and strong*/
+    display: inline; /*"block" option-To override default box type*/
+    margin: 50px;
+}
+
+div {
+    color: aqua;
+    background-color: black;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 10px;
+    width: 200px;
+    /*box-sizing: border-box;  Forces padding to 200px or set pixel of boxes*/
+    margin: 20px auto; /* centers block to/in it's parent element (Vertical Horizontal*/
+}
+
+        /* It is good practice to override default to a predictable value(universal css selector "*" */
+* {  /*adjusting default browser white band surrounding page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*sets for all boxes, thus matching all element */
+}
