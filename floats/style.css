@@ -7,9 +7,9 @@
 .page {
     width: 900px;
     margin: 0 auto;
-    /* border: 1px solid red;
+    /* border: 1px solid red; */
     overflow: hidden;
-    background-color: #eaedf0; */
+    /*background-color: #eaedf0; */
 }
 
 .menu {
@@ -51,17 +51,18 @@ h1 {
 
 p {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .footer {
     overflow: hidden;
-/*  clear: both;
-    height: 200px; */
+  clear: both;
+/*    height: 200px; */
     background-color: #90e4e7;
 }
 
 div {
-    text-align: left;
+    text-align: center;
 }
 
 .att {
@@ -97,6 +98,6 @@ div {
 
 .comment {
     margin: 10px;
-    overflow: hidden;
+    overflow: hidden; /* horizontally cleared, thus breaks the magazine style */
     font-size: 11.5px;
 }
