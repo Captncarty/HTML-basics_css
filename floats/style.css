@@ -7,7 +7,9 @@
 .page {
     width: 900px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red;
+    overflow: hidden;
+    background-color: #eaedf0; */
 }
 
 .menu {
@@ -23,31 +25,78 @@
 }
 
 .content {
+    padding: 20px;
     float: right;
     width: 600px;
     height: 500px;
-    background-color: yellow;
+    background-color: rgb(228, 150, 6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13.5px;
+}
+
+.image { /* floating image */
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: purple;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 20px;
 }
 
 .footer {
-    clear: both;
-    height: 200px;
-    background-color: #d6e9fe;
+    overflow: hidden;
+/*  clear: both;
+    height: 200px; */
+    background-color: #90e4e7;
 }
 
 div {
-    text-align: center;
+    text-align: left;
 }
 
 .att {
     color: lightcoral;
 }
 
-ul {
-    color: blueviolet;
-    list-style-type: lower-greek;
-    text-align: left;
-    padding: 0 auto;
-    margin: auto;
-    box-sizing: border-box;
+.container {
+    overflow: hidden;
+    background-color: #beee4e;
+}
+
+.column {
+    float: left;
+    width: 30%; /* percent (%) are used for responsive design */
+    margin: 20px 1.15%;
+    height: 160px;
+    background-color: #d89494;
+}
+
+/* CSS Rules for User comment thread */
+.avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    border-radius: 40px;
+    background-color: #d6e9fe;
+}
+
+.username {
+    margin-top: 10px;
+}
+
+.comment {
+    margin: 10px;
+    overflow: hidden;
+    font-size: 11.5px;
 }
