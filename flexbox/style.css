@@ -4,12 +4,31 @@
     box-sizing: border-box;
 }
 
-.menu-container {
+.menu-container { /* align a bunch of flex items inside a container, and, in turn, 
+                    those items can serve as flex containers for their own items */
+    display: flex;
+    justify-content: space-around;
     color: #FFF;
     background-color: #5995da;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+.menu { /* alligning and distributing items equally inside a container "multi-items" */
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid #fff;*/
+    width: 900px;
 }
 
 body {
     background-color: aqua;
+}
+
+.links {
+    /*border: 1px solid #FFF;*/
+    display: flex;
+    justify-content: flex-end;
+}
+.login {
+    margin-left: 20px;
 }
