@@ -65,11 +65,12 @@ body {
 }
 
 .photo-grid {
-    flex-direction: column;
+    flex-direction: row; /*row-reverse, column */
     flex-wrap: wrap;
     width: 900px;
     display: flex;
     justify-content: center;
+    align-items: center;
     /*border: 20px solid #1565c2;*/
 }
 
@@ -77,5 +78,18 @@ body {
     /*border: 1px solid #FFF;*/
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+}
+/*Order of items using flex-items not flex-containers*/
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+
+.social,
+.subscribe {
+    align-self: flex-end; /* algin both item at the bottom | flex-start for top*/
+    margin-bottom: 20px;
 }
