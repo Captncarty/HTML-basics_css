@@ -18,7 +18,7 @@
 }
 
 .menu {
-    background-color: #5995da;
+    background-color: #202f3f;
     height: 80px;
 }
 
@@ -29,10 +29,15 @@
 .content {
     background-color: #eaedf0;
     height: 600px;
+    /* re-order cocntent just below sign-up */
+    order: 2;
 }
 
 .sign-up {
     background-color: #d6e9fe;
+    /* re-order signup beneath features */
+    height: 200px;
+    order: 1;
 }
 
 .feature-1 {
@@ -70,7 +75,23 @@
 
 /* Desktop Styles */
 @media only screen and (min-width:961px) {
+    /* changing from endless to fixed width and centering the page */
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    /* creating a 3x3 grid for features */
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 33.3%;
+    }
+
+    .header {
+        height: 400px;
+    }
+
     body {
-        background-color: #b2d6ff;
+        background-color: #c4ffb2;
     }
 }
