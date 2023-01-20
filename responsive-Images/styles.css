@@ -105,7 +105,13 @@
     }
 }
 
-/* For fluid images using SVG's, thus always filling it's width */
+/* For fluid images using SVG's, thus always filling it's width, with no nesting
 .illustration {
     width: 100%;
+} /*
+
+/* for png, gif and jpegs */
+.illustration img {
+    width: 100%;
+    display: block;
 }
