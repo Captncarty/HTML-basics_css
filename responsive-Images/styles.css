@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #202f3f;
+    height: 80px;
+}
+
+.header {
+    background-color: #bcb6f7;
+}
+
+.content {
+    background-color: #eaedf0;
+    height: 600px;
+}
+
+.sign-up {
+    background-color: #d6e9fe;
+}
+
+.feature-1 {
+    background-color: #f5cf8e;
+}
+
+.feature-2 {
+    background-color: #f09a9d;
+}
+
+.feature-3 {
+    background-color: #c8c6fa;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width:400px) {
+    body {
+        background-color: #f09a9d;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width:401px) and (max-width:960px) {
+    /* updating tablet style to display 2x2 grid for sign-up and features */
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 50%;
+    }
+    body {
+        background-color: #f5cf8e;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width:961px) {
+    /* changing from endless to fixed width and centering the page */
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    /* creating a 3x3 grid for features */
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 33.3%;
+    }
+
+    /* re-order cocntent just below sign-up for Desktop view only*/
+    .content {
+        background-color: #eaedf0;
+        height: 600px;
+        order: 2;
+    }
+    
+    /* re-order signup beneath features */
+    .sign-up {
+        background-color: #d6e9fe;
+        height: 200px;
+        order: 1;
+    }
+
+    .header {
+        height: 400px;
+    }
+
+    body {
+        background-color: #c4ffb2;
+    }
+}
+
+/* For fluid images using SVG's, thus always filling it's width */
+.illustration {
+    width: 100%;
+}
