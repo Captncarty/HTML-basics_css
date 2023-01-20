@@ -28,3 +28,30 @@
     <li>Use align-self to vertically align individual items.</li>
     <li>Use flex to create flexible boxes that can stretch and shrink.</li>
 </ul>
+
+<a href='https://github.com/Captncarty/HTML-basics_css/tree/master/advanced-positioning'>Advanced Positioning</a>
+<ul>
+    <li>Relative positioning: for tweaking the position of an element without affecting it's surrounding boxes</li>
+    <li>Absolute positioning: takes element out of static flow of the page and place them relative to the browser window</li>
+    <li>Relatively-absolute positioning: allow us to hook back into the static flow of the page</li>
+    <li>Fixed positioning: allows us make elements not to scroll with the page</li>
+</ul>
+
+<a href='https://github.com/Captncarty/HTML-basics_css/tree/master/responsive-design'>Responsive Design</a>
+<ul>
+    <li>The responsive design(the mockups of each layout)</li>
+        <ul>
+            <li>Differences between fluid layouts and fixed-width layouts</li>
+        </ul>
+    <li>CSS rules for implementing each of these layouts</li>
+        <ul>
+            <li>Mobile layout</li>
+            <li>Tablet layout</li>
+            <li>Desktop layout</li>
+        </ul>
+    <li>Media Queries for conditionally applying those CSS rules</li>
+        <ul>
+            <li>Base CSS styles</li>
+            <li>Disabling the default zoom behaviour of mobile browsers</li>
+        </ul>
+</ul>
