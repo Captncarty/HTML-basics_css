@@ -29,15 +29,10 @@
 .content {
     background-color: #eaedf0;
     height: 600px;
-    /* re-order cocntent just below sign-up */
-    order: 2;
 }
 
 .sign-up {
     background-color: #d6e9fe;
-    /* re-order signup beneath features */
-    height: 200px;
-    order: 1;
 }
 
 .feature-1 {
@@ -85,6 +80,20 @@
     .feature-2,
     .feature-3 {
         width: 33.3%;
+    }
+
+    /* re-order cocntent just below sign-up for Desktop view only*/
+    .content {
+        background-color: #eaedf0;
+        height: 600px;
+        order: 2;
+    }
+    
+    /* re-order signup beneath features */
+    .sign-up {
+        background-color: #d6e9fe;
+        height: 200px;
+        order: 1;
     }
 
     .header {
