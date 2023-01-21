@@ -5,18 +5,26 @@
         <!--To disable zoom on Mobile layout-->
         <meta name="viewport"
                 content="width=device-width", initial-scale="1.0", maximum-scale="1.0"/>
-        <title>Responsive Design</title>
+        <title>Responsive Images</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="page">
             <div class="section menu"></div>
             <div class="section header">
-                <img src="images/header.svg"/>
+                <div class="photo">
+                    <img src="images/photo-small.jpg"
+                    srcset="images/photo-big.jpg 2000w,
+                            images/photo-big.jpg 1000w"
+                    sizes="(min-width: 960px) 960px, 100vw"/> <!--width optimization using srcset-->
+                </div>
             </div>
             <div class="section content">                   <!--fixing in a inline style to cap the widht-->
                 <div class="illustration">
-                    <img src="images/illustration-big.png" style="max-width: 500px;"/>
+                    <img src="images/illustration-small.png" 
+                    srcset="images/illustration-small.png 1x, 
+                    images/illustration-big.png 2x" 
+                    style="max-width: 500px;"/>
                 </div>
             </div>
             <div class="section sign-up">
