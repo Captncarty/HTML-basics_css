@@ -13,10 +13,13 @@
             <div class="section menu"></div>
             <div class="section header">
                 <div class="photo">
-                    <img src="images/photo-small.jpg"
-                    srcset="images/photo-big.jpg 2000w,
-                            images/photo-big.jpg 1000w"
-                    sizes="(min-width: 960px) 960px, 100vw"/> <!--width optimization using srcset-->
+                    <picture> <!--wrapper--> <!--<source>:defines which attr defines the image to be loaded-->
+                        <source media="(min-width: 401px)"
+                                srcset="images/photo-big.jpg"/>
+                        <source media="(max-width: 400px)"
+                                srcset="images/photo-tall.jpg"/>
+                        <img src="images/photo-small.jpg"/> <!--fallback for older browsers-->
+                    </picture>
                 </div>
             </div>
             <div class="section content">                   <!--fixing in a inline style to cap the widht-->
