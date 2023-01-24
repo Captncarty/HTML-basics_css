@@ -1,0 +1,19 @@
+/** {
+    padding: 0;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: paleturquoise;
+}
+
+section,
+article,
+aside,
+footer,
+header,
+nav {
+    display: block; /* for legacy browsers; making the semantic browsers behave like <div> elements */
+}
+

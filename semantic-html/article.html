@@ -1,20 +1,22 @@
+    <!--defining sectioning elements is convey or represent these (header, article, figure...) visual styles to Machines-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
         <title>Semantic HTML</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
+    <div class="page">                      <!--Start of Container-->
     <header>
-
         <h1>Intereneting is Easy</h1>
 
         <article>
 
         <header>
         <h1>Semantic HTML</h1>
-        <p>By Captncarty, Published TODAY.</p>
+        <p>By Captncarty, Published <time datetime="2023-1-23 23:00-0100">January 23rd</time> </p> <!--adding <time> tag-->
         </header>
         <!--Look! A fake advertisement!-->
 
@@ -27,6 +29,13 @@
         <section>
         <h2>The Document Outline</h2>
         <p>HTML5 includes several "sectioning content" elements that affect the Document Outline.</p>
+
+        <!--Adding <figure> and <figcaption> to <img> descriptor-->
+            <figure>
+                <img width="250px" src="../responsive-Images/images/illustration.svg" 
+                        alt="Diagram showing article, section, and nav elements"/>
+                <figcaption>New HTML5 semantic elements</figcaption>
+            </figure>
 
         <h4>Headers</h4>
         <p>The <code>&lt;header&gt;</code> element is one such sectioning element.</p>
@@ -42,6 +51,10 @@
 
         <footer>
         <p>This is a fake article reproduced from <a href="https://www.internetingishard.com">InternetingIshard.com</a></p>
+            <!--Adding contact descriptor using <address> element-->
+        <address>
+            Please contact <a href="captn:kelvinmac7@outlook.com">Kelvin Maccarthy</a> for questions about this render.
+        </address>
         </footer>
 
         </article>
@@ -72,6 +85,8 @@
         <footer>
         <p>&copy; 2023 <a href="https://github.com/Captncarty">GitHub.com</a></p>
         </footer>
+
+    </div>
         
         <nav>
         <ul>
