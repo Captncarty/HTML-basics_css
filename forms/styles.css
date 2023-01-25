@@ -24,11 +24,183 @@ body {
     border-radius: 3px;
 
     width: 80%;
-    margin: 40px;
+    margin: 40px 0;
     padding: 50px;
 }
 
 .speaker-form-header h1 {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+/* styling forms just as <div> thus matching our <header> */
+.speaker-form {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}
+
+/* styling text input field; employing: previous topics' tools */
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+
+.form-row input[type='text'],
+/* styling "email" input fields; <label> and <input> */
+.form-row input[type='email'] {
+    background-color: #ffffff;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 15px;
+}
+
+/* tweaking base styles to create Desktop Layout */
+@media only screen and (min-width: 700px) {
+    .speaker-form-header,
+    .speaker-form {
+        width: 600px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="text"]:invalid,
+    .form-row input[type="email"]:invalid,
+    .form-row select,
+    .form-row textarea {
+        width: 250px;
+        height: initial;
+        
+        border: 1px solid #d55c5f;
+        color: #d55c5f;
+        /* box-shadow: none;    to remove default firefox red glow */
+    }
+    /* setting up desktop styles for; email input fields */
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    /*tweaking Radio buttons using Floats>>>>>>>>For Desktop*/
+    .legacy-form-row {
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: left;
+        padding-right: 20px;
+    }
+    .legacy-form-row legend {
+        float: left;
+    }
+    /* tweaking <textarea>; nudging instructions to the center of the text area */
+    .form-row .instructions {
+        margin-left: 120px;
+    }
+    /* Tweaking desktop layout for checkboxes */
+    .form-row .checkbox-label {
+        margin-left: 120px;
+        width: auto;
+    }
+    /* Increasing margin to match other layour(centering); <button> */
+    .form-row button {
+        margin-left: 120px;
+    }
+}
+
+/*styling Radio buttons using Floats>>>>>>>>For Mobile devices*/
+.legacy-form-row {      /* <fieldsets> */
+    border: none;
+    margin-bottom: 40px;
+}
+
+.legacy-form-row legend {   /* <legend> */
+    margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {     /* <label> */
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+
+.legacy-form-row input[type='radio'] {      /* <input> */
+    margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+    float: left;
+}
+/* Styling <select> elements; keeping it simple */
+.form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px; /* wont work on -webkit apps like safari or chrome */
+    -webkit-appearance: none; /* this would make it work */
+    cursor: pointer;
+}
+
+/* Styling <textareas> */
+.form-row textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+
+    padding: 7px;
+    /*resize: none; To cancel textarea resizing */
+}
+
+.form-row .instructions {
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+/* styling checkbox */
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+.form-row input {
+    cursor: pointer;
+}
+/* styling <button> */
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.form-row button:hover {
+    background-color: #76aeed;
+}
+.form-row button:active {
+    background-color: #407fc7;
 }
