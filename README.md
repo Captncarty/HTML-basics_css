@@ -55,3 +55,32 @@
             <li>Disabling the default zoom behaviour of mobile browsers</li>
         </ul>
 </ul>
+
+<a href='https://github.com/Captncarty/HTML-basics_css/tree/master/responsive-Images'>Responsive Images</a>
+<ul>
+    <li>Makes images fit into mobile layouts while respecting their intrinsic size</li>
+    <li>Avoid making the User download unneccessarily large image files</li>
+    <li>inline max-width style, srcset to optimize screen res., And "picture" element; manual control over which image file to be displayed</li>
+</ul>
+
+<a href='https://github.com/Captncarty/HTML-basics_css/tree/master/semantic-html'>Semantic HTML</a>
+<ul>
+    <li>Conveying your mark-up and representing visual styles to machines using sectioning elements</li>
+        <ul>
+            <li>header</li>
+            <li>article</li>
+            <li>figure</li>
+            <li>footer</li>
+        </ul>
+</ul>
+
+<a href='https://github.com/Captncarty/HTML-basics_css/tree/master/forms'>HTML Forms</a>
+<ul>
+    <li>input type='text'</li>
+    <li>input type='email</li>
+    <li>input type='radio'</li>
+    <li>select and option</li>
+    <li>textarea</li>
+    <li>input type='checkbox'</li>
+    <li>button</li>
+</ul>
