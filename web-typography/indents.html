@@ -4,6 +4,21 @@
   <meta charset='UTF-8'/>
   <title>Paragraph Indents</title>
   <link rel='stylesheet' href='typo.css'/>
+  <!--changing exisiting bottom margin in the first section to an indent-->
+  <style>
+    .paragraph-indent p {
+      text-indent: 1em;
+      margin-bottom: 0;
+    }
+    .paragraph-indent p:first-of-type {
+      text-indent: 0;
+    }
+    /* not to do (negative-example) */
+    .never-both {
+      text-indent: 1em;
+      margin-bottom: 1em;
+    }
+  </style>
 </head>
 <body>
 
@@ -31,9 +46,9 @@
       <p>Everything in typography is about being subtle, and styling the separation
       between paragraphs is no different.</p>
 
-	  <p>Denoting a new paragraph should hardly be noticable to the reader, and
-	  first-line indents are a good way to achieve that. The first paragraph
-	  doesn’t need to be indented.</p>
+	    <p>Denoting a new paragraph should hardly be noticable to the reader, and
+	    first-line indents are a good way to achieve that. The first paragraph
+	    doesn't need to be indented.</p>
 
     </section>
 
