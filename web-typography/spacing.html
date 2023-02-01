@@ -4,6 +4,25 @@
   <meta charset='UTF-8'/>
   <title>Spacing</title>
   <link rel='stylesheet' href='typo.css'/>
+  <!--Vertical Rythm: Responsible usage of Margin-top,margin-bottom and line-hiegth-->
+  <style>
+    .messy {
+      line-height: 1.2em;
+    }
+    .messy h2 {
+      line-height: .9em;
+    }
+    .messy:last-of-type {
+      line-height: 1.5em;
+    }
+    .messy:last-of-type h2 {
+      margin-bottom: .3em;
+    }
+    .messy .button:link,
+    .messy .button:visited {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 

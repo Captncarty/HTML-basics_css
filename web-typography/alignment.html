@@ -4,6 +4,38 @@
   <meta charset='UTF-8'/>
   <title>Text Alignment</title>
   <link rel='stylesheet' href='typo.css'/>
+  <!--Embedding text-alignments; Left, Right, Center and Justified-->
+  <style>
+    .left {
+      text-align: left;
+    }
+    .center {
+      text-align: center;
+    }
+    .justify {
+      text-align: justify;
+    }
+  /* Right alignment: consider relationship with surrounding element */
+    figcaption {
+      display: none;
+    }
+    @media only screen and (min-width:900px) {
+      figure {
+        position: relative;
+      }
+      figcaption {
+        display: block;
+
+        font-style: italic;
+        text-align: right;
+        background-color: #ffffff;
+
+        position: absolute;
+        left: -220px;
+        width: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
 
