@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>More-JS</title>
+        <!--JS is included in Header-->
+        <script>
+            function myFunc() {
+                document.getElementById("demo").innerHTML = 'click next button to reveal date';
+            }
+
+            function mf() {
+                document.getElementById('remo').innerHTML = Date();
+            }
+        </script>
+    </head>
+    <body style="background-color: aqua; box-sizing: border-box;">
+        <div class="auto">
+            <h2>Demo JS is kept (optionally) in the "Head" element</h2>
+
+            <p id="demo">Options</p>
+
+            <button type="button" onclick="myFunc()">Try it</button>
+
+            <button type="button" onclick="mf()">Get Date</button>
+            <p id="remo"></p>
+
+            <button type="button" onclick="myfunt()">Click</button>
+            <p id="set">Vaula</p>
+            <script src="myscript.js"></script>
+
+            <p id="mth"></p>
+            <script>
+                document.getElementById('mth').innerHTML = 500 * 4.4;
+            </script>
+
+            <script>
+                document.write(5 * (8 - 6)); <!--Used for testing purposes-->
+            </script>
+
+            <button type="button" onclick="document.write(100/3)">Try it</button>
+
+            <script>
+                window.alert('What is your Name?'); <!--window can be ommitted-->
+            </script>
+
+            <script>
+                console.log(7 * 7); <!--Used for debuggin purposes-->
+            </script>
+
+            <!--Using window.print() to create an output-->
+            <p>Click the button to print the Page</p>
+            <button type="button" onclick="window.print()">Print this page  </button>
+        </div>
+    </body>
+</html>

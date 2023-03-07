@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Intro-JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="auto">
+            <h2>Opening Heading</h2>
+
+            <button type="button"
+            onclick="document.getElementById('nemo').innerHTML = Date()">Try Click Me</button>
+            <p id="nemo"></p>
+
+            <!--Javascript can change html content-->
+            <p id="Nemo">ALter this text</p>
+            <button type="button"
+            onclick="document.getElementById('Nemo').innerHTML = 'Here we go, It really changed!'">Touch</button>
+        </div>
+        <div class="auto new">
+            <h2>Changing Html Attributes.</h2>
+            <p>By changing the value of src(source) att of an image.</p>
+            <button onclick="document.getElementById('luffy').src='35056.gif'">loopy mode</button>
+
+            <img id="luffy" src="35056.gif" alt="goffy" style="width:250px; height: 200px;"/>
+
+            <button type="button" onclick="document.getElementById('luffy').src='35458.gif'">Focused Mode</button>
+        </div>
+        <div class="auto hd">
+            <h2>Changing Style</h2>
+
+            <p id="cssStyling">Changing the style of an html element</p>
+
+            <button type="button" onclick="document.getElementById('cssStyling').style.fontSize='35px'">Click Me</button>
+
+            <h2>Changing Style</h2>
+
+            <p id="hide">Javascript can hide an html element</p>
+
+            <button type="button" onclick="document.getElementById('hide').style.display='none'">Click Me</button>
+
+        </div>
+    </body>
+</html>

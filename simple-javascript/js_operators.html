@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Operators</title>
+        <a href="js_var.html">Variables</a>
+    </head>
+    <body>
+        <div class="super">
+            <h2>More on Operators</h2>
+
+            <p id="test"></p>
+            <p id="all"></p>
+            <p id="arr"></p>
+            <p id="a"></p>
+
+            <script>
+                //increment(++) and decrement(--)
+                let x = 20;
+                x++;
+                let y = x;
+                x--;
+                let z = x;
+                document.getElementById('test').innerHTML = y;
+                document.getElementById('all').innerHTML = z;
+
+                //exponential or pow
+                var b = Math.pow(x,2);
+                var b = x**2;
+                document.getElementById('arr').innerHTML = b;
+            </script>
+            <style>
+                * {
+                    padding: 0;
+                    background-color: black;
+                    color: aliceblue;
+                }
+                a {
+                    text-decoration: none;
+                    padding: 5px;
+                    background-color: peru;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                a:hover {
+                    background-color: brown;
+                    color: black;
+                }
+            </style>
+        </div>
+    </body>
+</html>

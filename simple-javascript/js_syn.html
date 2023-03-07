@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>JS-statements</title>
+    </head>
+    <body>
+        <h2>JS-statements and syntax</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+
+        <script>
+            let x=14, y=21;
+            let z = y-x;
+            a = 24;
+            const b = 21;
+            const pi = 3.14;
+            let sum = pi * b;
+            document.getElementById('demo').innerHTML = x+y;
+            document.getElementById('demo1').innerHTML = x * 2 / z; // JS expresions using "var" and "let"
+            document.getElementById('demo2').innerHTML = a/10; // JS expresions using "nothing"
+            document.getElementById('demo3').innerHTML = 'fixed at: ' + b; // JS expresions using "const" that can't be altered
+            document.getElementById('demo4').innerHTML = 'using let to accomodate changes ' + sum;
+        </script>
+    </body>
+</html>

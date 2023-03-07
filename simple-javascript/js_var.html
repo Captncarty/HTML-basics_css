@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>How-To-Var</title>
+        <a href="morejs.html">Aforemention</a>
+    </head>
+    <body style="background-color: antiquewhite; display:block; box-sizing:border-box;">
+        <div class="super">
+            <h2>More on Variables</h2>
+
+            <p id="test"></p>
+            <p id="all">Giveon</p>
+            <p id="arr">Some arrays</p>
+            <p id="a"></p>
+            <ul>
+                <li id="obj">Some basic dict</li>
+                <li id="dict"></li>
+                <li id="dic"></li>
+                <li id="di">new fix</li>
+            </ul>
+            <p id="b"></p>
+
+            <script>
+                var fix = 77;
+                let $ = 10;
+                let _x = "5";
+                /* block scope */
+                {
+                    var fix = 21; //gets affected even outside the block
+                    let _x = 10; //distinct variables and won't be affected since declared with let
+                }
+                document.getElementById('test').innerHTML = fix + $ + _x; //$ is accepted as a letter in js
+
+                //using constant (const) to form arrays(list)
+                const cars = ['honda ', 'benz ', 'toyota '];
+                cars.push('ram'); //adding element
+                cars[0] = 'kia '; //changing element using index
+                document.getElementById('arr').innerHTML = cars;
+
+                //using constant (const) to form Objects(dict)
+                const new_cars = {type: 'saloon', color: 'grey', year: '2020'};
+                new_cars.model = 'camry'; //adding properties
+                new_cars.color = 'midnight black';
+                document.getElementById('obj').innerHTML = new_cars.type;
+                document.getElementById('dict').innerHTML = new_cars.color;
+                document.getElementById('dic').innerHTML = new_cars.year;
+                document.getElementById('di').innerHTML = new_cars.model;
+                
+
+                //Arithmetic operators
+                let a = 5;
+                let x = (100 + 5) * a;
+                document.getElementById('a').innerHTML = x;
+
+                var text = "What's my Name ";
+                text += "Bitch!";
+                document.getElementById('b').innerHTML = text;
+
+            </script>
+            <style>
+                * {
+                    padding: 0;
+                    margin: 0;
+                }
+                p, ul {
+                    margin: 20px;
+                }
+
+                h2 {
+                    margin-top: 10px;
+                }
+                a {
+                    background-color: aquamarine;
+                    text-decoration: none;
+                    padding: 7px;
+                    border: 1px solid #ffffff;
+                    border-radius: 5px;
+                    align-items: center;
+                }
+                a:hover {
+                    background-color: lightcoral;
+                }
+            </style>
+        </div>
+    </body>
+</html>
