@@ -1,0 +1,82 @@
+
+/* Adding Theme */
+:root { /*for switching purpose, root; represents <html> in HTML page */
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Adding Light theme*/
+.light-theme {
+    /*color: #000000;
+    background: #00ff00;
+    updating*/
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+/* Adding dark theme */
+.dark-theme {
+        --bg: var(--black);
+        --fontColor: var(--green);
+        --btnBg: var(--white);
+        --btnFontColor: var(--black);
+    }
+
+
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 50px;
+}
+
+.lst, li:last-of-type {
+    color: brown;
+    font-family: courier;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    list-style: circle;
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    text-align: center;
+    margin-right: 50px;
+    font-family: times new roman;
+}
+
+p {
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin-right: 50px;
+    font-weight: bold;
+    font-family: times new roman;
+}
+
+/* customizing button */
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
