@@ -34,10 +34,10 @@ body {
 
 * {
     margin: 0;
-    padding: 50px;
+    padding: 0;
 }
 
-.lst, li:last-of-type {
+.lst, li:last-of-type, a {
     color: brown;
     font-family: courier;
     text-align: center;
@@ -48,6 +48,7 @@ body {
 }
 
 h1 {
+    margin-top: 15px;
     margin-left: 50px;
     padding: 50px;
     box-sizing: border-box;
@@ -71,12 +72,20 @@ p {
 /* customizing button */
 .btn {
     position: absolute;
-    top: 20px;
-    left: 250px;
+    bottom: 0;
+    right: 0;
     height: 50px;
     width: 50px;
     border-radius: 50px;
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #00FF00;
 }

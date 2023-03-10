@@ -1,9 +1,13 @@
 'use strict';
+
 //event handler: a way to run a javascript function when an event happens on the page
-const switcher = document.querySelector('.btn'); //document.querySelector; This function uses CSS selectors
+
+const switcher = document.querySelector('.btn'); 
+//document.querySelector; This function uses CSS selectors
 //add handler for the 'click' event
 //add a listener for the 'click' event
 //And define an event handler function to be executed when click occurs
+
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('light-theme');
     document.body.classList.toggle('dark-theme');
@@ -13,8 +17,7 @@ switcher.addEventListener('click', function() {
     const className = document.body.className;
     if(className == 'light-theme') {
         this.textContent = 'Dark';
-    }
-    else {
+    } else {
         this.textContent = 'Light';
     }
     //Console Message; hidden from the webpage, readable in developer tools, Helpful in seeing result
