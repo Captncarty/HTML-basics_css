@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.up, .ul { /* align a bunch of flex items inside a container, and, in turn, 
+                    those items can serve as flex containers for their own items */
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    background-color: #5995da;
+    padding: 20px 0;
+}
+
+.ul {
+    background-color: burlywood;
+}
+
+.menu { /* alligning and distributing items equally inside a container "multi-items" */
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid #fff;*/
+    width: 900px;
+}
+
+.ol {
+    background-color: rgb(255, 145, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: dashed;
+    color: greenyellow;
+}
+
+body {
+    background-color: aqua;
+}
+
+.links {
+    /*border: 1px solid #FFF;*/
+    display: flex;
+    justify-content: flex-end;
+}
+.login {
+    margin-left: 20px;
+}
+
+/* styling for links elements in header-Flex-container */
+.header-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+/* Vertical Alignemet */
+.header {
+    /*flex-direction: column;*/
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.social,
+.logo,
+.subscribe {
+    border: 1px solid #5995da; The box of each item covers the entire box
+}*/
+
+/* FLEX-WRAPPING: alignment, direction and order change */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+    /*border: 20px solid #0c1520;*/
+}
+
+.photo-grid {
+    flex-direction: row; /*row-reverse, column */
+    flex-wrap: wrap;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 20px solid #1565c2;*/
+}
+
+.grid-item {
+    /*border: 1px solid #FFF;*/
+    width: 300px;
+    height: 300px;
+}
+/*Order of items using flex-items not flex-containers*/
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+
+.social,
+.subscribe {
+    align-self: flex-end; /* algin both item at the bottom | flex-start for top*/
+    margin-bottom: 20px;
+}
+
+/*Flexible-Items setup*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #d6e9fe;
+    height: 200px;
+    flex: 1; /*tells the items to stretch to match the width of the ".footer" */
+}
+
+.footer-two {
+    flex: 2; /* increasing weight of one makes it grow more than the others*/
+}
+
+.footer-one,
+.footer-three {
+    background-color: #5995da;
+    flex: initial; /* ignores declaration from .footer-item and uses it's own width */
+    width: 300px;
+}
+
+.signup {
+    margin-left: auto;
+}
