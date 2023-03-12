@@ -16,8 +16,6 @@ http.createServer(function (req, res) {
         };
         res.writeHead(200, {'Content': 'text/html'});
         res.write(data);
-        console.log('giveme' + filename);
-        console.log(q);
         return res.end();
     });
 }).listen(8080);
