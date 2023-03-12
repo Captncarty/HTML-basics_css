@@ -23,6 +23,12 @@
         --btnBg: var(--white);
         --btnFontColor: var(--black);
     }
+/*.new-theme {
+    --bg: var(--red);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--blue)
+}*/
 
 
 
@@ -44,11 +50,12 @@ body {
     text-decoration: underline;
     cursor: pointer;
     list-style: circle;
+    list-style-position: inside;
     padding: 20px;
 }
 
 h1 {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 50px;
     padding: 50px;
     box-sizing: border-box;
@@ -58,7 +65,7 @@ h1 {
     font-family: times new roman;
 }
 
-p {
+p, td{
     margin-left: 50px;
     margin-top: 5px;
     padding: 10px;
@@ -69,13 +76,17 @@ p {
     font-family: times new roman;
 }
 
+.apple {
+    margin-left: 50px;
+}
+
 /* customizing button */
 .btn {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    width: 50px;
+    bottom: 1.8px;
+    right: 1.8px;
+    height: 35px;
+    width: 35px;
     border-radius: 50px;
     border: none;
     color: var(--btnFontColor);
@@ -87,5 +98,9 @@ p {
 }
 
 .btn:hover {
-    color: #00FF00;
+    background-color: #c7254e;
+    color: #f8b34e;
 }
+
+/*.HoverClass1:hover {color: blue !important; background-color: green !important;}
+.HoverClass2:hover {color: red !important; background-color: yellow !important;}*/

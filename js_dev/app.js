@@ -14,12 +14,21 @@ switcher.addEventListener('click', function() {
     //toggle; modify  <body> element's class attribute (automatically adds or removes either themes classes)
 
     //updating label to show correct theme
-    const className = document.body.className;
-    if(className == 'light-theme') {
+    const ClassName = document.body.className;
+    if(ClassName == 'light-theme') {
         this.textContent = 'Dark';
     } else {
         this.textContent = 'Light';
     }
     //Console Message; hidden from the webpage, readable in developer tools, Helpful in seeing result
-    console.log('current class name: ' + className);
+    console.log('current class name: ' + ClassName);
+
+    //recreate
+
 });
+
+/*var Button=document.getElementById('Button');
+Clear all previous hover classes 
+Button.classList.remove('HoverClass1','HoverClass2');
+Set the desired hover class
+Button.classList.add('HoverClass2'); */
