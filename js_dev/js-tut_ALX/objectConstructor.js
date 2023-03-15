@@ -15,7 +15,7 @@ const comp = createPerson('Mike', 44);
 
 comp.align(); */
 
-//Pattern 2: Using this(refers to the object it's nested in!
+//Pattern 2: Using this(refers to the object it's nested in!)
 function createPer(name, age) {
     this.name = name;
     this.age = age;
